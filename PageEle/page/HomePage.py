@@ -336,7 +336,15 @@ class HomePage(Page):
         img.height=20
         sheet.add_image(img)
         self.back()
-
+        #获取商品链接
+        self.get_elem("by.id","com.xingin.xhs:id/cll").click()
+        self.swip()
+        shop_url=self.get_elem("by.xpath",'//android.widget.Button[@content-desc="复制链接"]/android.view.ViewGroup/android.widget.ImageView[1]')
+        shop_url.click()
+        url=self.clipboard_content()
+        Tools.step_log(f'商品链接是{url}')
+        data[10]=url
+        
         entry=self.find_element(HomeSelector.ENTRY)
         self.slip("xhs_slow_down_1")
         text_views =self.get_elem("by.classes_name","android.widget.TextView")

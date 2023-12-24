@@ -44,10 +44,12 @@ def test_mss425e_control():
     sheet['H1'] = '店铺小红书号'
     sheet['I1'] = '卖家口碑分'
     sheet['J1'] = '图片'
+    sheet['K1'] = '商品链接'
+    sheet['L1'] = '店铺链接'
 
     for i in range(1,2):
         Tools.step_log(f"当前是第{i}条")
-        data=[None]*10
+        data=[None]*12
         data[0]=i
         page.collect_info(sheet,data,i);
     ran = ''.join(random.sample(string.ascii_letters + string.digits, 5))

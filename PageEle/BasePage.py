@@ -451,6 +451,18 @@ class Page:
             y = location['y'] + size['height'] - 5
             self.tap(x, y)
 
+    def clipboard_content(self):
+        return self.driver.get_clipboard()        
+
+    def swip(self):
+        # 计算滑动起始点和结束点的坐标
+        start_x = 850  # 起始点横坐标为屏幕宽度的80%
+        start_y =  2103 # 起始点纵坐标为屏幕高度的50%
+        end_x = 245 # 结束点横坐标为屏幕宽度的20%
+        end_y = 2089
+
+        # 执行向左滑动操作
+        self.driver.swipe(start_x,start_y,end_x,end_y,duration=1000)
 
 if __name__ == '__main__':
     pass
