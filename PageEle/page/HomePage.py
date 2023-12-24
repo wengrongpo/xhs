@@ -260,36 +260,68 @@ class HomePage(Page):
         self.tap(650,435)
         #进入商品详情页
         #获取原价
-        original_price_1 = self.find_element(HomeSelector.ORINGINAL_PRICE_1)
-        if original_price_1.text.isdigit():
-            original_price=original_price_1.text
-        else:
-            original_price = self.find_element(HomeSelector.ORINGINAL_PRICE).text
-        Tools.step_log(f'原价是{original_price}')  
-        data[2]=original_price  
-        #获取到手价
-        nowdays_price_1 = self.find_element(HomeSelector.NOWDAYS_PRICE_1)  
-        nowdays_price = self.find_element(HomeSelector.NOWDAYS_PRICE)  
-        nowdays_price_1plus1 = self.find_element(HomeSelector.NOWDAYS_PRICE_1plus1)  
-        nowdays_price_plus1 = self.find_element(HomeSelector.NOWDAYS_PRICE_plus1)  
-        decimal_point = self.find_element(HomeSelector.DECIMAL_PONIT)
-        decimal_point_1 = self.find_element(HomeSelector.DECIMAL_PONIT_1)
-        if nowdays_price_1.text.isdigit():
-            nowdays_price=nowdays_price_1.text
-            Tools.step_log(f'到手价是{nowdays_price}')
-            data[3]=nowdays_price
-        elif nowdays_price.text.isdigit(): 
-            Tools.step_log(f'到手价是{nowdays_price.text}')  
-            data[3]=nowdays_price.text
-        elif "." in decimal_point_1.text:
-            Tools.step_log(f'到手价是{nowdays_price_1plus1.text}') 
-            data[3]=nowdays_price_1plus1.text
-        elif "." in decimal_point.text  :
-            Tools.step_log(f'到手价是{nowdays_price_plus1.text}')         
-            data[3]=nowdays_price_plus1.text
-        else:
-            Tools.step_log(f'无到手价')  
+        # original_price_1 = self.find_element(HomeSelector.ORINGINAL_PRICE_1)
+        # if original_price_1.text.isdigit():
+        #     original_price=original_price_1.text
+        # else:
+        #     original_price = self.find_element(HomeSelector.ORINGINAL_PRICE).text
+        # Tools.step_log(f'原价是{original_price}')  
+        # data[2]=original_price  
+        #获取原价、获取到手价
+        text_views =self.get_elem("by.classes_name","android.widget.TextView")
+        originalFlag=False
+        currentFlag=False
+        count=0
+        sum=0
+        for text_view in text_views:
+            #获取原价
+            if originalFlag :
+                Tools.step_log(f'原价是{text_view.text}')
+                data[2]=text_view.text
+                originalFlag=False
+            #获取到手价    
+            if currentFlag :
+                Tools.step_log(f'到手价是{text_view.text}')
+                data[3]=text_view.text
+                break;
+            #获取到手价
+            if text_view.text=="¥" and count==1:
+                currentFlag=True 
+            #获取原价
+            if text_view.text=="¥" and count==0:
+                originalFlag=True
+                count+=1
+            
+            sum+=1
+            if sum==15:break
+        if currentFlag==False:
+            Tools.step_log('无到手价')
             data[3]='无到手价'
+            
+        
+        #获取到手价
+        # nowdays_price_1 = self.find_element(HomeSelector.NOWDAYS_PRICE_1)  
+        # nowdays_price = self.find_element(HomeSelector.NOWDAYS_PRICE)  
+        # nowdays_price_1plus1 = self.find_element(HomeSelector.NOWDAYS_PRICE_1plus1)  
+        # nowdays_price_plus1 = self.find_element(HomeSelector.NOWDAYS_PRICE_plus1)  
+        # decimal_point = self.find_element(HomeSelector.DECIMAL_PONIT)
+        # decimal_point_1 = self.find_element(HomeSelector.DECIMAL_PONIT_1)
+        # if nowdays_price_1.text.isdigit():
+        #     nowdays_price=nowdays_price_1.text
+        #     Tools.step_log(f'到手价是{nowdays_price}')
+        #     data[3]=nowdays_price
+        # elif nowdays_price.text.isdigit(): 
+        #     Tools.step_log(f'到手价是{nowdays_price.text}')  
+        #     data[3]=nowdays_price.text
+        # elif "." in decimal_point_1.text:
+        #     Tools.step_log(f'到手价是{nowdays_price_1plus1.text}') 
+        #     data[3]=nowdays_price_1plus1.text
+        # elif "." in decimal_point.text  :
+        #     Tools.step_log(f'到手价是{nowdays_price_plus1.text}')         
+        #     data[3]=nowdays_price_plus1.text
+        # else:
+        #     Tools.step_log(f'无到手价')  
+        #     data[3]='无到手价'
         #获取商品名
         name =self.find_element(HomeSelector.NAME).text
         Tools.step_log(f'商品名是{name}')
