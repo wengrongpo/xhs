@@ -1,0 +1,251 @@
+
+  -
+   device_id: "1"
+   device_cate: "Smart Plug"
+   device_name: "MSS310"
+    #  设备wifi
+   wifi_name: "Meross_SW_5C9C"
+   device_version: "no-hk"
+   device_nickname: "mss310"
+   # 设备属性
+   mac: '48:e1:e9:4c:5c:9c'
+   uuid: '2102087957484951805448e1e94c5c9c'
+  -
+   device_id: "2"
+   device_cate: "Smart Surge Protector"
+   device_name: "MSS425E"
+    #  设备wifi
+   wifi_name: "Meross_SW_2958"
+   device_version: "no-hk"
+   device_nickname: "mss425e"
+   # 设备属性
+   mac: '34:29:8f:1f:29:58'
+   uuid: '2009281241656400042334298f1f2958'
+  -
+   device_id: "3"
+   device_cate: "Smart Air Purifier"
+   device_name: "MAP100"
+    #  设备wifi
+   wifi_name: "Meross_AP_352D"
+   device_version: "hk"
+   device_nickname: "map100"
+   #  HomeKit设备专属
+   setup_code: "02049565"
+   device_icon_name: 'MAP100-352d'
+      # 设备属性
+   mac: '34:29:8f:1f:35:2d'
+   uuid: '2206080341745800017334298f1f352d'
+  -
+   device_id: "4"
+   device_cate: "Smart Bulb"
+   device_name: "MSL120"
+    #  设备wifi
+   wifi_name: "Meross_LB_4469"
+   device_version: "no-hk"
+   device_nickname: "msl120"
+   # 设备属性
+   mac: '48:E1:E9:97:44:69'
+   uuid: '2206144864624052050648e1e9974469'
+  -
+   device_id: "5"
+   device_cate: "Smart Humidifier and Diffuser"
+   device_name: "MOD100"
+    #  设备wifi
+   wifi_name: "Meross_MD_33DB"
+   device_version: "hk"
+   device_nickname: "Test Oil Diffuser"
+   setup_code: "88186486"
+   device_icon_name: 'MOD100-33DB'
+  -
+   device_id: "6"
+   device_cate: "Smart Garage Door Opener"
+   device_name: "MSG100"
+    #  设备wifi
+   wifi_name: "Meross_MG_8AD9"
+   device_version: "hk"
+   device_nickname: "msg100"
+     #  HomeKit设备专属
+   setup_code: "46971111"
+   device_icon_name: 'MSG100-8ad9'
+     # 设备属性
+   mac: '48:e1:e9:77:8a:d9'
+   uuid: '2109230732051636102248e1e9778ad9'
+  -
+   #配网失败专用
+   device_id: "7"
+   device_cate: "Smart Plug"
+   device_name: "MSS110"
+    #  设备wifi
+   wifi_name: "Meross_SW_498F"
+   device_version: "no-hk"
+   device_nickname: "fail is life"
+
+  -
+   #refoss设备
+   device_id: "8"
+   device_cate: "Smart Plug"
+   device_name: "MSS110"
+   #  设备wifi
+   wifi_name: "Meross_SW_5582"
+   device_version: "no-hk"
+   device_nickname: "refoss mss110"
+   # 设备属性
+   mac: '48:e1:e9:88:55:82'
+   uuid: '2201208230262551809648e1e9885582'
+  -
+   device_id: "9"
+   device_cate: "Smart Surge Protector"
+   device_name: "MSS425E"
+    #  设备wifi
+   wifi_name: "Meross_SW_4670"
+   device_version: "no-hk"
+   device_nickname: "refoss mss425e"
+   # 设备属性
+   mac: '34:29:8f:15:46:70'
+   uuid: '1803195167954029080634298f154670'
+
+  -
+   device_id: "10"
+   device_cate: "Smart Bulb"
+   device_name: "MSL120"
+   #  设备wifi
+   wifi_name: "Meross_LB_1AF2"
+   device_version: "no-hk"
+   device_nickname: "refoss msl120"
+   # 设备属性
+   mac: '34:29:8f:1f:1a:f2'
+   uuid: '1906054734171701234534298f1f1af2'
+
+  -
+   device_id: "11"
+   device_cate: "Smart Surge Protector"
+   device_name: "MSS425F"
+    #  设备wifi
+   wifi_name: "Meross_SW_2AED"
+   device_version: "no-hk"
+   device_nickname: "mss425f"
+   # 设备属性
+   mac: '34:29:8f:16:2a:ed'
+   uuid: '1808189793438929083534298f162aed'
+
+  -
+   device_id: "12"
+   device_cate: "Smart Plug"
+   device_name: "MSS120"
+    #  设备wifi
+   wifi_name: "Meross_SW_FF86"
+   device_version: "hk"
+   device_nickname: "mss120br"
+   setup_code: "72489641"
+   device_icon_name: 'MSS120-FF86'
+   # 设备属性
+   mac: '48:e1:e9:ba:ff:86'
+   uuid: '2302170619197451080a48e1e9baff86'
+
+  -
+   device_id: "13"
+   device_cate: "Smart Outdoor Plug"
+   device_name: "MSS620"
+    #  设备wifi
+   wifi_name: "Meross_SW_2DD8"
+   device_version: "no-hk"
+   device_nickname: "mss620"
+   # 设备属性
+   mac: '48:e1:e9:3d:2d:d8'
+   uuid: '20112487979349290d2048e1e93d2dd8'
+
+  -
+   device_id: "14"
+   device_cate: "Smart Switch"
+   device_name: "MSS510"
+    #  设备wifi
+   wifi_name: "Meross_SW_ACC7"
+   device_version: "hk"
+   device_nickname: "mss510xr"
+   setup_code: "15183236"
+   device_icon_name: 'MSS510-ACC7'
+   # 设备属性
+   mac: '48:e1:e9:46:ac:c7'
+   uuid: '2101152771931855853248e1e946acc7'
+
+  -
+   device_id: "15"
+   device_cate: "Smart Switch"
+   device_name: "MSS560"
+    #  设备wifi
+   wifi_name: "Meross_SW_135A"
+   device_version: "hk"
+   device_nickname: "mss560x"
+   setup_code: "13920406"
+   device_icon_name: 'MSS560-135A'
+   # 设备属性
+   mac: '48:e1:e9:69:13:5a'
+   uuid: '2103307838516055854048e1e969135a'
+
+  -
+   device_id: "16"
+   device_cate: "Smart Bulb"
+   device_name: "MSL100"
+    #  设备wifi
+   wifi_name: "Meross_SL_84E2"
+   device_version: "no-hk"
+   device_nickname: "msl100r"
+   # 设备属性
+   mac: '34:29:8f:16:84:e2'
+   uuid: '1809042090960729084234298f1684e2'
+
+  -
+   device_id: "17"
+   device_cate: "Smart Lamp"
+   device_name: "MDL110"
+    #  设备wifi
+   wifi_name: "Meross_LB_81B5"
+   device_version: "hk"
+   device_nickname: "mdl110"
+   setup_code: "84880917"
+   device_icon_name: 'MDL110-81B5'
+   # 设备属性
+   mac: '48:e1:e9:3e:81:b5'
+   uuid: '2012087441974990835948e1e93e81b5'
+
+  -
+   device_id: "18"
+   device_cate: "Smart LED Light Strip"
+   device_name: "MSL320"
+    #  设备wifi
+   wifi_name: "Meross_LB_DF51"
+   device_version: "hk"
+   device_nickname: "msl320cr"
+   setup_code: "19821162"
+   device_icon_name: 'MSL320-DF51'
+   # 设备属性
+   mac: '48:e1:e9:a4:df:51'
+   uuid: '22082525233626560F0248e1e9a4df51'
+
+  -
+   device_id: "19"
+   device_cate: "Smart Ambient Light"
+   device_name: "MSL420"
+    #  设备wifi
+   wifi_name: "Meross_LB_2AC0"
+   device_version: "hk"
+   device_nickname: "msl420"
+   setup_code: "94582615"
+   device_icon_name: 'MSL420-2AC0'
+   # 设备属性
+   mac: '48:e1:e9:68:2a:c0'
+   uuid: '2103295271367590847648e1e9682ac0'
+
+  -
+   device_id: "20"
+   device_cate: "Smart Ceiling Light"
+   device_name: "MSL210"
+    #  设备wifi
+   wifi_name: "Meross_LB_EFDF"
+   device_version: "hk"
+   device_nickname: "msl210"
+   setup_code: "59548610"
+   device_icon_name: 'MSL210-EFDF'
+   # 设备属性
+   mac: '48:e1:e9:d6:ef:df'
+   uuid: '2308214071729052200148e1e9d6efdf'

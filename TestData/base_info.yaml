@@ -1,0 +1,82 @@
+email_info:
+  email: 'zqnf99@163.com'
+  pwd: 'IYDGMKTKUETSQSAR'
+  origin_pwd: 'test0.aa'
+  changed_pwd: 'justTest0.'
+  del_email: 'szzx51@126.com'
+  del_pwd: 'HCLEAQRAQEATVODW'
+user_info:
+  user: '2392914540@qq.com'
+  #user: 'ui@app.com'
+  pwd: 'jianjian0.'
+  # pd_url: 'https://iotx-us.meross.com'
+  test_url: ""
+wifi_info:
+  home_wifi_name: 'TEST_UI'
+  home_wifi_pwd: 'testui0.'
+pop_up_window:
+  Would you like to install a device now?: 'Do it later'
+  Holiday Season is Coming!: 'No'
+  Do you want to configure it first?: 'Yes'
+  Turn on location service: 'Sure'
+  Allow meross to access this device’s location?: 'While using the app'
+  Open Network: 'This is an Encrypted Network'
+  Allow “Meross” to use wireless data?: 'WLAN & Cellular'
+  Allow While Using App: 'Allow While Using App'
+  While Using the app: 'While Using the app'
+  “Meross” Would Like to Access Your Home Data: 'OK'
+  Trust this network: 'Trust this network'
+  New Version Found: 'Cancel'
+  connect to, and determine the relative position of nearby devices?: 'Allow'
+  Got it: 'Got it'
+  OK: 'OK'
+  Not Now: Not Now
+  “Refoss” Would Like to Send You Notifications: 'Allow'
+  Allow “Refoss” to use wireless data?: 'WLAN Only'
+  “Refoss” would like to find and connect to devices on your local network: 'Allow'
+  “Refoss” Would Like to Use Bluetooth: "Don't Allow"
+  Enjoy “Refoss”?: 'Not really'
+  Would you mind sending us your feedback?: 'Cancel'
+  Connection error: 'OK'
+  Update Apple Watch: 'Dismiss'
+  Response timeout.: 'Ok'
+  Allow Refoss to access this device’s location?: 'While using the app'
+  Exit setup: 'Exit setup'
+
+dev_uuid_mapping:
+  #meross设备
+  themorstatB:
+    '2307144662967560080248e1e9d146b4': '192.168.124.76'
+  themorstat:
+    '2108132221042090855048e1e9741f9e': '192.168.124.71'
+  smartPlug:
+    '2009281241656400042334298f1f2958': '192.168.124.6' #mss425e
+  hub:
+    '2206170325450462080248e1e998fecf': '192.168.124.73' #msh300hk-mts100 不支持toggleX
+    '2305301237086862080348e1e9c83df5': '192.168.124.74' #msh300hk-mts150 不支持toggleX 
+  hub_Themorstat:
+    '2206170325450462080248e1e998fecf': '01005AC9'
+    '2305301237086862080348e1e9c83df5': '03003CFD'
+  diffuser:  
+    '2202164251901600017034298f1f33db': '192.168.124.29' #香薰机
+    # '2206144864624052050648e1e9974469': '192.168.124.4' #msl120da v6
+    
+    # '2102087957484951805448e1e94c5c9c': '192.168.124.57' #mss310 v6
+    # '2206080341745800017334298f1f352d': '192.168.124.7' # 空净
+    #'2109230732051636102248e1e9778ad9': "192.168.1.122" # 车库门
+    #'1808189793438929083534298f162aed': '192.168.124.49' #mss425f
+    # '2101152771931855853248e1e946acc7': '192.168.124.10' #mss510xr
+    # '2103307838516055854048e1e969135a': '192.168.124.66' #mss560x
+    # '2302170619197451080a48e1e9baff86': '192.168.124.55' #mss120br
+    # '20112487979349290d2048e1e93d2dd8': '192.168.124.62' #mss620
+    # '1809042090960729084234298f1684e2': '192.168.124.39' #msl100r
+    # '2012087441974990835948e1e93e81b5': '192.168.124.42' #mdl110
+    # '22082525233626560F0248e1e9a4df51': '192.168.124.43' #msl320cr
+    # '2103295271367590847648e1e9682ac0': '192.168.124.44' #msl420
+    # '2308214071729052200148e1e9d6efdf': '192.168.124.70' #msl210
+
+dev_uuid_mapping_refoss:
+  #refoss设备
+  '2201208230262551809648e1e9885582': '192.168.124.12'#mss110 v6
+  '1803195167954029080634298f154670': '192.168.124.33'#mss425e v1
+  '1906054734171701234534298f1f1af2': '192.168.124.40'#msl120J v2

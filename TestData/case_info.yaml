@@ -1,0 +1,673 @@
+# ------------------设备配网------------------
+ -
+  case_id: "DN-001"
+  func: 'test_do_network_normal'
+  title: "mss310插座正常配网"
+  tag: 'meross,dn,net,merossAn'   #dn Distribution Network 配网
+  device_id: "1"
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+  #  设备wifi
+  wifi_name: "$"
+  #  设备连接家里的wifi
+  home_wifi_name: "$"
+  home_wifi_pwd: "$"
+  device_version: "$"
+  device_nickname: "$"
+  uuid: "$"
+
+ -
+  case_id: "DN-002"
+  func: 'test_do_network_normal'
+  title: "mss425e排插正常配网"
+  device_id: "2"
+  tag: 'meross,dn,net,merossAn'
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+  #  设备wifi
+  wifi_name: "$"
+  #  设备连接家里的wifi
+  home_wifi_name: "$"
+  home_wifi_pwd: "$"
+  device_version: "$"
+  device_nickname: "$"
+  uuid: '$'
+# -
+#  case_id: "DN-003"
+#  func: 'test_do_network_normal'
+#  title: "空净正常配网"
+#  device_id: "3"
+#  tag: 'meross,dn'
+#  user: "$"
+#  pwd: "$"
+#  device_cate: "$"
+#  device_name: "$"
+#  #  设备wifi
+#  wifi_name: "$"
+#  #  设备连接家里的wifi
+#  home_wifi_name: "$"
+#  home_wifi_pwd: "$"
+#  device_version: "$"
+#  device_nickname: "$"
+#  #  HomeKit设备专属
+#  setup_code: "$"
+#  device_icon_name: '$'
+#  uuid: "$"
+ -
+  case_id: "DN-004"
+  func: 'test_do_network_normal'
+  title: "msl120正常配网"
+  device_id: "4"
+  tag: 'meross,dn,net,merossAn'
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+  #  设备wifi
+  wifi_name: "$"
+  #  设备连接家里的wifi
+  home_wifi_name: "$"
+  home_wifi_pwd: "$"
+  device_version: "$"
+  device_nickname: "$"
+  uuid: "$"
+ -
+  case_id: "DN-005"
+  func: 'test_do_network_normal'
+  title: "车库门正常配网"
+  device_id: "6"
+  tag: 'dn'
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+  #  设备wifi
+  wifi_name: "$"
+  #  设备连接家里的wifi
+  home_wifi_name: "$"
+  home_wifi_pwd: "$"
+  device_version: "$"
+  device_nickname: "$"
+  uuid: '$'
+ -
+  case_id: "DN-006"
+  func: 'test_do_network_exception'
+  title: "配网失败"
+  device_id: "2"
+  tag: 'meross,dn,net,merossAn'
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+  #  设备wifi
+  wifi_name: "$"
+  #  设备连接家里的wifi
+  home_wifi_name: "$"
+  home_wifi_pwd: "wrong_pwd"
+  device_version: "$"
+  device_nickname: "$"
+  bind_model: 'bind_error'
+ -
+  case_id: "DN-007"
+  func: 'test_do_network_normal'
+  title: "mss110插座正常配网"
+  tag: 'dn,refoss'   #dn Distribution Network 配网
+  device_id: "8"
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+  #  设备wifi
+  wifi_name: "$"
+  #  设备连接家里的wifi
+  home_wifi_name: "$"
+  home_wifi_pwd: "$"
+  device_version: "$"
+  device_nickname: "$"
+  uuid: "$"
+ -
+  case_id: "DN-008"
+  func: 'test_do_network_normal'
+  title: "mss425e排插正常配网"
+  device_id: "9"
+  tag: 'dn,refoss'
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+  #  设备wifi
+  wifi_name: "$"
+  #  设备连接家里的wifi
+  home_wifi_name: "$"
+  home_wifi_pwd: "$"
+  device_version: "$"
+  device_nickname: "$"
+  uuid: '$'
+ -
+  case_id: "DN-009"
+  func: 'test_do_network_normal'
+  title: "msl120正常配网"
+  device_id: "10"
+  tag: 'refoss,dn'
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+   #  设备wifi
+  wifi_name: "$"
+   #  设备连接家里的wifi
+  home_wifi_name: "$"
+  home_wifi_pwd: "$"
+  device_version: "$"
+  device_nickname: "$"
+  uuid: "$"
+ -
+  case_id: "DN-010"
+  func: 'test_do_network_exception'
+  title: "refoss配网失败"
+  device_id: "8"
+  tag: 'dn,refoss'
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+   #  设备wifi
+  wifi_name: "$"
+   #  设备连接家里的wifi
+  home_wifi_name: "$"
+  home_wifi_pwd: "wrong_pwd"
+  device_version: "$"
+  device_nickname: "$"
+  bind_model: 'bind_error'
+# ------------------用户模块------------------
+ -
+  case_id: "USER-001"
+  func: 'test_signup_normal'
+  title: "正常注册"
+  tag: 'meross,signup,user,refoss,merossAn'
+  user: "$random_str@meross99.meross.test"
+  pwd: "test0.2333T"
+  judge: "normal"
+ -
+  case_id: "USER-002"
+  func: 'test_signup_exceptions'
+  title: "已注册邮箱再次注册"
+  tag: 'meross,signup,user,refoss,merossAn'
+  user: "2392914540@qq.com"
+  pwd: "jianjian"
+  judge: "registered"
+ -
+  case_id: "USER-003"
+  func: 'test_signup_exceptions'
+  title: "不合法邮箱提示"
+  tag: 'meross,signup,user,refoss,merossAn'
+  user: "exceptions.com"
+  pwd: "test_zp0."
+  judge: "invalid_email"
+ -
+  case_id: "USER-004"
+  func: 'test_signup_exceptions'
+  title: "密码位数过少无法注册"
+  tag: 'meross,signup,user,refoss,merossAn'
+  user: "zhangsan@178.com"
+  pwd: "test"
+  judge: "pwd_less"
+ -
+  case_id: "USER-005"
+  func: 'test_signup_exceptions'
+  title: "不同意协议无法注册"
+  tag: 'meross,signup,user,refoss,merossAn'
+  user: "$random_str@178.com"
+  pwd: "test1111"
+  judge: "uncheck_agreement"
+ -
+  case_id: "USER-006"
+  func: 'test_login'
+  title: "正常登录"
+  tag: 'meross,login,user,refoss,merossAn'
+  user: "2392914540@qq.com"
+  pwd: "jianjian0."
+  judge: "normal"
+ -
+  case_id: "USER-007"
+  func: 'test_login'
+  title: "登陆时密码错误"
+  tag: 'meross,login,user,refoss,merossAn'
+  user: "szzx51@163.com"
+  pwd: "test1111"
+  judge: "pwd_wrong"
+ -
+  case_id: "USER-008"
+  func: 'test_login'
+  title: "登陆不存在账号"
+  tag: 'meross,login,user,refoss,merossAn'
+  user: "23929145zh@163.com"
+  pwd: "test1111"
+  judge: "uon_exist_user"
+ -
+  case_id: "USER-009"
+  func: 'test_login'
+  title: "不同意协议无法登录"
+  tag: 'meross,login,user,refoss,merossAn'
+  user: "2392914540@qq.com"
+  pwd: "jianjian"
+  judge: "uncheck_agreement"
+ -
+  case_id: "USER-010"
+  func: 'test_forgot_change_pwd'
+  title: "忘记密码后校验修改密码"
+  tag: 'meross,user,refoss,merossAn'
+  judge: "normal"
+ -
+   case_id: "USER-011"
+   func: 'test_change_email_delete_account'
+   title: "修改email并删除账号"
+   tag: 'change_email,delete_account,user'
+   signup_email: '$random_str@meross99.meross.test'
+   pwd: "test0.0."
+   judge: 'normal'
+ -
+   case_id: "USER-012"
+   func: 'test_change_pwd_no_sms'
+   title: "无验证码修改密码"
+   tag: 'meross,change_pwd,user,refoss,merossAn'
+   signup_user: '$random_str@meross99.meross.test'
+   pwd: 'jianjian'
+   new_pwd: 'Test0.'
+   judge: 'normal'
+ -
+   case_id: "USER-013"
+   func: 'test_integration_meross'
+   title: "integration跳转正确"
+   tag: 'integration,Alexa,google'
+   user: "$"
+   pwd: "$"
+# ------------------Forum模块------------------
+ -
+   case_id: "FORUM-001"
+   func: 'test_verify_forum_tag_with_login'
+   title: "验证在登录状态下Forum页面通用功能检查正确"
+   tag: 'meross,forum,merossAn'
+   user: "$"
+   pwd: "$"
+ -
+   case_id: "FORUM-002"
+   func: 'test_verify_forum_tag_with_logout'
+   title: "验证在未登录状态下Forum页面通用功能检查正确"
+   tag: 'forum'
+   user: "$"
+   pwd: "$"
+# ------------------设备控制------------------
+ -
+  case_id: "CTL-001"
+  func: 'test_mss425e_control'
+  title: "详情页控制mss425e"
+  device_id: "2"
+  tag: 'meross,control,merossAn'
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+  device_nickname: '$'
+  sub_switch_on: {"USB":'togglex[4].onoff==1,togglex[4].channel==4',"Switch 1":'togglex[1].onoff==1,togglex[1].channel==1',"Switch 2":'togglex[2].onoff==1,togglex[2].channel==2',"Switch 3":'togglex[3].onoff==1,togglex[3].channel==3'}
+  sub_switch_off: {"USB":'togglex[4].onoff==0,togglex[4].channel==4',"Switch 1":'togglex[1].onoff==0,togglex[1].channel==1',"Switch 2":'togglex[2].onoff==0,togglex[2].channel==2',"Switch 3":'togglex[3].onoff==0,togglex[3].channel==3'}
+  master_switch_on: 'togglex[0].onoff==1,togglex[0].channel==0'
+  master_switch_off: 'togglex[0].onoff==0,togglex[0].channel==0'
+  uuid: "$"
+  mac: "$"
+ -
+  case_id: "CTL-002"
+  func: 'test_mss110_control'
+  title: "home页控制mss310开关"
+  device_id: "1"
+  tag: 'meross,control,merossAn'
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+  device_nickname: '$'
+  #设备控制
+  on_rule: 'togglex[0].onoff==1,togglex[0].channel==0'
+  off_rule: 'togglex[0].onoff==0,togglex[0].channel==0'
+  uuid: "$"
+  mac: "$"
+ -
+  case_id: "CTL-003"
+  func: 'test_msg100_control'
+  title: "车库门开关、开关消息推送"
+  tag: 'notif'
+  user: '$'
+  pwd: '$'
+  device_nickname: 'msg100'
+ -
+  case_id: "CTL-004"
+  func: 'test_map100_control'
+  title: "详情页控制map100"
+  tag: 'meross,control,merossAn'
+  device_id: '3'
+  user: '$'
+  pwd: '$'
+  device_nickname: '$'
+  rule: {'speed_middle_mode':'fan[0].speed==3,fan[0].channel==0','sleep_model':'fan[0].speed==1,fan[0].channel==0',"child_lock_on":'lock[0].onoff==1,lock[0].channel==0','child_lock_off':'lock[0].onoff==0,lock[0].channel==0','master_switch_on':'togglex[0].onoff==1,togglex[0].channel==0','master_switch_off':'togglex[0].onoff==0,togglex[0].channel==0'}
+#  speed_mid_mode: 'fan[0].speed==3,fan[0].channel==0'
+#  sleep_model: 'fan[0].speed==1,fan[0].channel==0'
+#  child_lock_on: 'lock[0].onoff==1,lock[0].channel==0'
+#  child_lock_off: 'lock[0].onoff==0,lock[0].channel==0'
+#  master_switch_on: 'togglex[0].onoff==1,togglex[0].channel==0'
+#  master_switch_off: 'togglex[0].onoff==0,togglex[0].channel==0'
+  mac: '$'
+  uuid: "$"
+
+ -
+  case_id: "CTL-005"
+  func: 'test_mss110_control'
+  title: "home页控制mss110开关"
+  device_id: "8"
+  tag: 'refoss_control,refoss'
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+  device_nickname: '$'
+  #设备控制
+  off_rule: 'togglex[0].onoff==0,togglex[0].channel==0'
+  on_rule: 'togglex[0].onoff==1,togglex[0].channel==0'
+  uuid: "$"
+  mac: "$"
+ -
+  case_id: "CTL-006"
+  func: 'test_mss425e_control'
+  title: "详情页控制mss425e"
+  device_id: "9"
+  tag: 'refoss_control,refoss'
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+  device_nickname: '$'
+  sub_switch_on: { "USB": 'togglex[4].onoff==1,togglex[4].channel==4',"Switch 1": 'togglex[1].onoff==1,togglex[1].channel==1',"Switch 2": 'togglex[2].onoff==1,togglex[2].channel==2',"Switch 3": 'togglex[3].onoff==1,togglex[3].channel==3' }
+  sub_switch_off: { "USB": 'togglex[4].onoff==0,togglex[4].channel==4',"Switch 1": 'togglex[1].onoff==0,togglex[1].channel==1',"Switch 2": 'togglex[2].onoff==0,togglex[2].channel==2',"Switch 3": 'togglex[3].onoff==0,togglex[3].channel==3' }
+  master_switch_on: 'togglex[0].onoff==1,togglex[0].channel==0'
+  master_switch_off: 'togglex[0].onoff==0,togglex[0].channel==0'
+  uuid: "$"
+  mac: "$"
+ -
+  case_id: "CTL-007"
+  func: 'test_mss425e_control'
+  title: "详情页控制mss425f"
+  device_id: "11"
+  tag: 'meross,control,merossAn'
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+  device_nickname: '$'
+  sub_switch_on: { "USB": 'togglex[5].onoff==1,togglex[5].channel==5',"Switch 1": 'togglex[1].onoff==1,togglex[1].channel==1',"Switch 2": 'togglex[2].onoff==1,togglex[2].channel==2',"Switch 3": 'togglex[3].onoff==1,togglex[3].channel==3',"Switch 4": 'togglex[4].onoff==1,togglex[4].channel==4' }
+  sub_switch_off: { "USB": 'togglex[5].onoff==0,togglex[5].channel==5',"Switch 1": 'togglex[1].onoff==0,togglex[1].channel==1',"Switch 2": 'togglex[2].onoff==0,togglex[2].channel==2',"Switch 3": 'togglex[3].onoff==0,togglex[3].channel==3',"Switch 4": 'togglex[4].onoff==0,togglex[4].channel==4' }
+  master_switch_on: 'togglex[0].onoff==1,togglex[0].channel==0'
+  master_switch_off: 'togglex[0].onoff==0,togglex[0].channel==0'
+  uuid: "$"
+  mac: "$"
+ -
+  case_id: "CTL-008"
+  func: 'test_mss120_control'
+  title: "home页控制mss120br开关"
+  device_id: "12"
+  tag: 'meross,control,merossAn'
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+  device_nickname: '$'
+  #设备控制
+  switch_on: { "Switch 1": 'togglex[1].onoff==1,togglex[1].channel==1',"Switch 2": 'togglex[2].onoff==1,togglex[2].channel==2' }
+  switch_off: { "Switch 1": 'togglex[1].onoff==0,togglex[1].channel==1',"Switch 2": 'togglex[2].onoff==0,togglex[2].channel==2' }
+  uuid: "$"
+  mac: "$"
+ -
+  case_id: "CTL-009"
+  func: 'test_mss120_control'
+  title: "home页控制mss620开关"
+  device_id: "13"
+  tag: 'meross,control,merossAn'
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+  device_nickname: '$'
+  #设备控制
+  switch_on: { "Switch 1": 'togglex[1].onoff==1,togglex[1].channel==1',"Switch 2": 'togglex[2].onoff==1,togglex[2].channel==2' }
+  switch_off: { "Switch 1": 'togglex[1].onoff==0,togglex[1].channel==1',"Switch 2": 'togglex[2].onoff==0,togglex[2].channel==2' }
+  uuid: "$"
+  mac: "$"
+ -
+  case_id: "CTL-010"
+  func: 'test_mss110_control'
+  title: "home页控制mss510xr开关"
+  device_id: "14"
+  tag: 'meross,control,merossAn'
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+  device_nickname: '$'
+  #设备控制
+  on_rule: 'togglex[0].onoff==1,togglex[0].channel==0'
+  off_rule: 'togglex[0].onoff==0,togglex[0].channel==0'
+  uuid: "$"
+  mac: "$"
+ -
+  case_id: "CTL-011"
+  func: 'test_mss110_control'
+  title: "home页控制mss560x开关"
+  device_id: "15"
+  tag: 'meross,control,merossAn'
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+  device_nickname: '$'
+  #设备控制
+  on_rule: 'togglex[0].onoff==1,togglex[0].channel==0'
+  off_rule: 'togglex[0].onoff==0,togglex[0].channel==0'
+  uuid: "$"
+  mac: "$"
+ -
+  case_id: "CTL-012"
+  func: 'test_mss110_control'
+  title: "home页控制msl100r开关"
+  device_id: "16"
+  tag: 'control,merossAn'
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+  device_nickname: '$'
+  #设备控制
+  on_rule: 'togglex[0].onoff==1,togglex[0].channel==0'
+  off_rule: 'togglex[0].onoff==0,togglex[0].channel==0'
+  uuid: "$"
+  mac: "$"
+ -
+  case_id: "CTL-013"
+  func: 'test_mdl110_control'
+  title: "详情页控制mdl110开关"
+  device_id: "17"
+  tag: 'control,merossAn'
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+  device_nickname: '$'
+  #设备控制
+  on_rule: 'togglex[0].onoff==1,togglex[0].channel==0'
+  off_rule: 'togglex[0].onoff==0,togglex[0].channel==0'
+  uuid: "$"
+  mac: "$"
+ -
+  case_id: "CTL-014"
+  func: 'test_msl320_control'
+  title: "详情页控制msl320cr开关，并切换effects/color页面"
+  device_id: "18"
+  tag: 'control,merossAn'
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+  device_nickname: '$'
+  #设备控制
+  on_rule: 'togglex[0].onoff==1,togglex[0].channel==0'
+  off_rule: 'togglex[0].onoff==0,togglex[0].channel==0'
+  uuid: "$"
+  mac: "$"
+ -
+  case_id: "CTL-015"
+  func: 'test_msl420_control'
+  title: "详情页控制msl420开关，并切换white/color页面"
+  device_id: "19"
+  tag: 'control,merossAn'
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+  device_nickname: '$'
+  #设备控制
+  on_rule: 'togglex[0].onoff==1,togglex[0].channel==0'
+  off_rule: 'togglex[0].onoff==0,togglex[0].channel==0'
+  uuid: "$"
+  mac: "$"
+ -
+  case_id: "CTL-016"
+  func: 'test_msl420_control'
+  title: "详情页控制msl120开关，并切换white/color页面"
+  device_id: "4"
+  tag: 'control,merossAn'
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+  device_nickname: '$'
+  #设备控制
+  on_rule: 'togglex[0].onoff==1,togglex[0].channel==0'
+  off_rule: 'togglex[0].onoff==0,togglex[0].channel==0'
+  uuid: "$"
+  mac: "$"
+ -
+  case_id: "CTL-017"
+  func: 'test_msl210_control'
+  title: "详情页控制msl210"
+  device_id: "20"
+  tag: 'control,merossAn'
+  user: "$"
+  pwd: "$"
+  device_cate: "$"
+  device_name: "$"
+  device_nickname: '$'
+  #设备控制
+  on_rule: 'togglex[0].onoff==1,togglex[0].channel==0'
+  off_rule: 'togglex[0].onoff==0,togglex[0].channel==0'
+  uuid: "$"
+  mac: "$"
+# ------------------smart 模块------------------
+ -
+  case_id: "SMT-001"
+  func: 'test_scene_check'
+  title: "scene和scene schedule部分检查"
+  tag: 'meross,smart,merossAn'
+  user: '$'
+  pwd: '$'
+  scene_name: 'off the device'
+  all_on_scene_name: 'all on'
+  device_list: ['mss425e','msl120','Test Oil Diffuser']
+  disable_routine_name: 'Test Not On'
+  uuid_rule: [{'uuid':'2206144864624052050648e1e9974469','rule':'togglex[0].onoff==0,togglex[0].channel==0'},{'uuid':'2009281241656400042334298f1f2958','rule':'togglex[0].onoff==0,togglex[0].channel==0'},{'uuid':'2202164251901600017034298f1f33db','rule':'diffuser.spray[0].mode==2,diffuser.spray[0].channel==0'}]
+ -
+  case_id: "SMT-002"
+  func: 'test_modify_scene_schedule'
+  title: "scene schedule修改并启用验证"
+  tag: 'meross,smart,merossAn'
+  user: '$'
+  pwd: '$'
+  scene_one: 'scene_one'
+  scene_two: 'scene_modify'
+  scene_one_device_list: ['mss425e']
+  scene_two_device_list: ['mss425e','msl120','Test Oil Diffuser']
+  scene_schedule_name: 'test modify'
+  new_scene_schedule_name: 'test modified'
+  check_rule: [{'uuid':'2206144864624052050648e1e9974469','rule':'togglex[0].onoff==1,togglex[0].channel==0'},{'uuid':'2009281241656400042334298f1f2958','rule':'togglex[0].onoff==1,togglex[0].channel==0'},{'uuid':'2202164251901600017034298f1f33db','rule':'diffuser.spray[0].mode==0,diffuser.spray[0].channel==0'}]
+ -
+  case_id: "SMT-003"
+  func: 'test_routine_check'
+  title: "routine device创建、修改成功校验"
+  tag: 'meross,smart,merossAn'
+  user: '$'
+  pwd: '$'
+  init_scene: 'turn on plug bulb'
+  device_list: ['msl120','mss310']
+  init_check: [{'uuid':'2206144864624052050648e1e9974469','rule':'togglex[0].onoff==1,togglex[0].channel==0'},{'uuid':'2102087957484951805448e1e94c5c9c','rule':'togglex[0].onoff==1,togglex[0].channel==0'}]
+  model_one: 'schedule'
+  ds_name_one: "msl120"
+  routine_name_one: 'msl120 routine'
+  action_one: "On"
+  uuid_rule_one: [{'uuid':'2206144864624052050648e1e9974469','rule':'togglex[0].onoff==0,togglex[0].channel==0'}]
+  model_two: 'schedule'
+  ds_name_two: "mss310"
+  routine_name_two: 'plug off'
+  action_two: "Off"
+  new_name: 'msl120 off'
+  new_device: 'msl120'
+  new_action_scene: 'Off'
+  uuid_rule_two: [{'uuid':'2102087957484951805448e1e94c5c9c','rule':'togglex[0].onoff==0,togglex[0].channel==0'}]
+ -
+  case_id: "SMT-004"
+  func: 'test_scene_check'
+  title: "scene和scene schedule部分检查"
+  tag: 'refoss_smart,refoss'
+  user: '$'
+  pwd: '$'
+  scene_name: 'off the device'
+  all_on_scene_name: 'all on'
+  device_list: ['refoss mss425e','refoss msl120','refoss mss110']
+  disable_routine_name: 'Test Not On'
+  uuid_rule: [{'uuid':'1803195167954029080634298f154670','rule':'togglex[0].onoff==0,togglex[0].channel==0'},{'uuid':'1906054734171701234534298f1f1af2','rule':'togglex[0].onoff==0,togglex[0].channel==0'},{'uuid':'2201208230262551809648e1e9885582','rule':'togglex[0].onoff==0,togglex[0].channel==0'}]
+ -
+  case_id: "SMT-005"
+  func: 'test_modify_scene_schedule'
+  title: "scene schedule修改并启用验证"
+  tag: 'refoss_smart,refoss'
+  user: '$'
+  pwd: '$'
+  scene_one: 'scene_one'
+  scene_two: 'scene_modify'
+  scene_one_device_list: ['refoss mss110']
+  scene_two_device_list: ['refoss mss425e','refoss msl120','refoss mss110']
+  scene_schedule_name: 'test modify'
+  new_scene_schedule_name: 'test modified'
+  check_rule: [{'uuid':'1803195167954029080634298f154670','rule':'togglex[0].onoff==1,togglex[0].channel==0'},{'uuid':'1906054734171701234534298f1f1af2','rule':'togglex[0].onoff==1,togglex[0].channel==0'},{'uuid':'2201208230262551809648e1e9885582','rule':'togglex[0].onoff==1,togglex[0].channel==0'}]
+ -
+  case_id: "SMT-006"
+  func: 'test_routine_check'
+  title: "routine device创建、修改成功校验"
+  tag: 'refoss_smart,refoss'
+  user: '$'
+  pwd: '$'
+  init_scene: 'turn on plug bulb'
+  device_list: ['refoss msl120','refoss mss110']
+  init_check: [{'uuid':'1906054734171701234534298f1f1af2','rule':'togglex[0].onoff==1,togglex[0].channel==0'},{'uuid':'2201208230262551809648e1e9885582','rule':'togglex[0].onoff==1,togglex[0].channel==0'}]
+  model_one: 'schedule'
+  ds_name_one: "refoss msl120"
+  routine_name_one: 'refoss msl120 routine'
+  action_one: "On"
+  uuid_rule_one: [{'uuid':'1906054734171701234534298f1f1af2','rule':'togglex[0].onoff==0,togglex[0].channel==0'}]
+  model_two: 'schedule'
+  ds_name_two: "refoss mss110"
+  routine_name_two: 'plug off'
+  action_two: "Off"
+  new_name: 'msl120 off'
+  new_device: 'refoss msl120'
+  new_action_scene: 'Off'
+  uuid_rule_two: [{'uuid':'2201208230262551809648e1e9885582','rule':'togglex[0].onoff==0,togglex[0].channel==0'}]

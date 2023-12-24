@@ -1,0 +1,242 @@
+
+ -
+   phone_id: 1
+   platformName: "iOS"
+   deviceName: "iPhone x"
+   automationName: "XCUITest"
+   udid: "5bbd27fdef2e9951d6a80195da0380a71a69c797"
+   xcodeOrgId: "Z8JGFK5CQM"
+   xcodeSigningId: "iPhone Developer"
+   platformVersion": "15.7"
+ -
+  phone_id: 2
+  platformName: 'android'
+  platformVersion: '12'
+  deviceName: 'M2011K2C'
+  noReset: True
+  appActivity: 'com.meross.meross.ui.start.FirstCheckActivity'
+  automationName: 'UiAutomator2'
+  dontStopAppOnReset: True
+  autoGrantPermissions: True
+ -
+   phone_id: 3
+   platformName: "iOS"
+   deviceName: "iPhone xs"
+   automationName: "XCUITest"
+   udid: "00008020-0019456A268A002E"
+   xcodeOrgId: "Z8JGFK5CQM"
+   xcodeSigningId: "iPhone Developer"
+   platformVersion: "15.4"
+ -
+   phone_id: 4
+   platformName: "iOS"
+   deviceName: "iPhone 13 Pro Max"
+   automationName: "XCUITest"
+   udid: "20EB1282-B974-43CF-9657-5A15E9FF5ACB"
+   platformVersion: "15.5"
+ -
+   phone_id: 5
+   platformName: 'android'
+   platformVersion: '12'
+   deviceName: 'R28M213LKMZ'
+   appActivity: 'com.meross.meross.ui.start.FirstCheckActivity'
+   autoGrantPermissions: True
+   dontStopAppOnReset: True
+   noReset: True
+   automationName: "UiAutomator2"
+ -
+   phone_id: 6
+   platformName: 'android'
+   platformVersion: '9'
+   deviceName: '192.168.84.105:5555'
+   appActivity: 'com.meross.meross.ui.start.FirstCheckActivity'
+   autoGrantPermissions: True
+   dontStopAppOnReset: True
+   noReset: True
+   automationName: "UiAutomator2"
+ -
+   phone_id: 7
+   platformName: 'android'
+   platformVersion: '12'
+   deviceName: '30ea1bdd'
+   appActivity: 'com.meross.meross.ui.start.FirstCheckActivity'
+   autoGrantPermissions: True
+   dontStopAppOnReset: True
+   noReset: True
+   automationName: "UiAutomator2"
+ -
+   phone_id: 8
+   platformName: 'android'
+   platformVersion: '9'
+   deviceName: '192.168.84.110:5555'
+   appActivity: 'com.meross.meross.ui.start.FirstCheckActivity'
+   autoGrantPermissions: True
+   dontStopAppOnReset: True
+   noReset: True
+   automationName: "UiAutomator2"
+ -
+   phone_id: 9
+   platformName: 'android'
+   platformVersion: '11'
+   deviceName: '438d4117'
+   appActivity: 'com.meross.meross.ui.start.FirstCheckActivity'
+   autoGrantPermissions: True
+   dontStopAppOnReset: True
+   noReset: True
+   automationName: "UiAutomator2"
+ -
+   phone_id: 10
+   platformName: "iOS"
+   deviceName: "iPhone 13 Pro Max"
+   automationName: "XCUITest"
+   udid: "697CF848-8C2D-4B24-96AB-8B13A1A6FA69"
+   platformVersion: "16.0"
+ -
+   phone_id: 11
+   platformName: 'android'
+   platformVersion: '11'
+   deviceName: 'emulator-5554'
+   appActivity: 'com.meross.meross.ui.start.FirstCheckActivity'
+   autoGrantPermissions: True
+   dontStopAppOnReset: True
+   noReset: True
+   automationName: "UiAutomator2"
+ -
+   phone_id: 12
+   platformName: "iOS"
+   deviceName: "iPhone Xs"
+   automationName: "XCUITest"
+   udid: "00008020-0019456A268A002E"
+   platformVersion: "15.6"
+ -
+   phone_id: 13
+   platformName: 'android'
+   platformVersion: '12'
+   deviceName: 'bd0110a8'
+   appActivity: 'com.meross.meross.ui.start.FirstCheckActivity'
+   autoGrantPermissions: True
+   dontStopAppOnReset: True
+   noReset: True
+   automationName: "UiAutomator2"
+ -
+   phone_id: 14
+   platformName: "iOS"
+   deviceName: "iPhone 11"
+   automationName: "XCUITest"
+   udid: "00008030-0008784E02D0802E"
+   platformVersion: "16.0"
+   xcodeOrgId: "Z8JGFK5CQM"
+   xcodeSigningId: "iPhone Developer"
+ -
+   phone_id: 15
+   platformName: "iOS"
+   deviceName: "iPhone 13"
+   automationName: "XCUITest"
+   udid: "00008110-001845DA0C10401E"
+   platformVersion: "16.2"
+   xcodeOrgId: "Z8JGFK5CQM"
+   xcodeSigningId: "iPhone Developer"
+ -
+   phone_id: 16
+   platformName: "iOS"
+   deviceName: "iPhone 12"
+   automationName: "XCUITest"
+   udid: "00008101-000160321400001E"
+   platformVersion: "15.5"
+   xcodeOrgId: "Z8JGFK5CQM"
+   xcodeSigningId: "iPhone Developer"
+ -
+   phone_id: 17
+   platformName: 'android'
+   platformVersion: '13'
+   deviceName: 'R5CT10QJYQF'
+   appActivity: 'com.meross.meross.ui.start.FirstCheckActivity'
+   autoGrantPermissions: True
+   dontStopAppOnReset: True
+   noReset: True
+   automationName: "UiAutomator2"
+ -
+    phone_id: 18
+    platformName: "iOS"
+    deviceName: "iPhone 12 Pro Max"
+    automationName: "XCUITest"
+    udid: "00008101-000D25092290001E"
+    platformVersion: "15.6"
+    xcodeOrgId: "Z8JGFK5CQM"
+    xcodeSigningId: "iPhone Developer"
+ -
+    phone_id: 19
+    platformName: "iOS"
+    deviceName: "iPhone 11 pro"
+    automationName: "XCUITest"
+    udid: "00008030-001555290EC0802E"
+    platformVersion: "16.1.1"
+    xcodeOrgId: "Z8JGFK5CQM"
+    xcodeSigningId: "iPhone Developer"
+ -
+    phone_id: 20
+    platformName: 'android'
+    platformVersion: '13'
+    deviceName: 'dmhqnzkvxwjnrs6h'
+    appActivity: 'com.meross.meross.ui.start.FirstCheckActivity'
+    autoGrantPermissions: True
+    dontStopAppOnReset: True
+    noReset: True
+    automationName: "UiAutomator2"
+ -
+    phone_id: 21
+    platformName: 'android'
+    platformVersion: '12'
+    deviceName: '89VY0CLS3'
+    appActivity: 'com.meross.meross.ui.start.FirstCheckActivity'
+    autoGrantPermissions: True
+    dontStopAppOnReset: True
+    noReset: True
+    automationName: "UiAutomator2"
+ -
+    phone_id: 22
+    platformName: "iOS"
+    deviceName: "iPhone xr"
+    automationName: "XCUITest"
+    udid: "00008020-001E31280C09002E"
+    platformVersion: "14.4.2"
+    xcodeOrgId: "Z8JGFK5CQM"
+    xcodeSigningId: "iPhone Developer"
+ -
+    phone_id: 23
+    platformName: "iOS"
+    deviceName: "iPhone 11"
+    automationName: "XCUITest"
+    udid: "00008030-001C2CDE3A89802E"
+    platformVersion: "14.4.2"
+    xcodeOrgId: "Z8JGFK5CQM"
+    xcodeSigningId: "iPhone Developer"
+ -
+    phone_id: 24
+    platformName: 'android'
+    platformVersion: '12'
+    deviceName: '145cabe5'
+    appActivity: 'com.meross.meross.ui.start.FirstCheckActivity'
+    autoGrantPermissions: True
+    dontStopAppOnReset: True
+    noReset: True
+    automationName: "UiAutomator2"
+ -
+    phone_id: 25
+    platformName: 'android'
+    platformVersion: '12'
+    deviceName: '2ff0c9bc'
+    appActivity: 'com.meross.meross.ui.start.FirstCheckActivity'
+    autoGrantPermissions: True
+    dontStopAppOnReset: True
+    noReset: True
+    automationName: "UiAutomator2"
+ -
+     phone_id: 26
+     platformName: 'android'
+     platformVersion: '13'
+     deviceName: '8a27f654'
+     autoGrantPermissions: True
+     dontStopAppOnReset: True
+     noReset: True
+     automationName: "UiAutomator2"
