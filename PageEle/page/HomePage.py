@@ -257,7 +257,7 @@ class HomePage(Page):
 
     def collect_info(self,sheet,data,i):
         time.sleep(5)
-        self.tap(650,435)
+        self.tap(675,240)
         #进入商品详情页
         #获取原价
         # original_price_1 = self.find_element(HomeSelector.ORINGINAL_PRICE_1)
@@ -383,6 +383,14 @@ class HomePage(Page):
         matches =re.findall(r'\d+',xhsh)
         Tools.step_log(f'小红书号是{matches[0]}')
         data[7]=matches[0]
+        #获取店铺链接
+        self.get_elem("by.id","com.xingin.xhs:id/gg4").click()
+        shop_url=self.get_elem("by.xpath",'//android.widget.Button[@content-desc="复制链接"]/android.view.ViewGroup/android.widget.ImageView[1]')
+        shop_url.click()
+        url=self.clipboard_content()
+        Tools.step_log(f'店铺链接是{url}')
+        data[11]=url
+
         sheet.append(data)
         self.back()
         self.back()
