@@ -47,13 +47,26 @@ def test_mss425e_control():
     sheet['K1'] = '商品链接'
     sheet['L1'] = '店铺链接'
 
-    for i in range(1,2):
+    ran = ''.join(random.sample(string.ascii_letters + string.digits, 5))
+    excel_path = f'demo{ran}.xlsx'
+
+    page.continuetodo()
+    for i in range(1,76):
         Tools.step_log(f"当前是第{i}条")
         data=[None]*12
         data[0]=i
-        page.collect_info(sheet,data,i);
-    ran = ''.join(random.sample(string.ascii_letters + string.digits, 5))
-    workbook.save(f'demo{ran}.xlsx')
+        try:
+            page.collect_info(sheet, data, i)
+            # 每执行一条记录后保存到 Excel 表格
+            workbook.save(excel_path)
+        except Exception as e:
+            print(f"记录第{i}条数据时出错: {str(e)}")
+
+    try:
+        workbook.save(excel_path)
+        print(f"Excel 文件保存成功: {excel_path}")
+    except Exception as e:
+        print(f"保存 Excel 文件时出错: {str(e)}")
   
     # Tools.start_deal(test_data["title"], test_data)
     # Flow.login(test_data["user"], test_data["pwd"])
