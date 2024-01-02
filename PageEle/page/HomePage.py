@@ -255,9 +255,13 @@ class HomePage(Page):
         time.sleep(5)
         self.slip('xhs_slow_down')
 
+    def continuetodo(self):
+        for i in range(1,250):
+            self.slip('xhs_slow_down')   
+
     def collect_info(self,sheet,data,i):
         time.sleep(5)
-        self.tap(675,240)
+        self.tap(675,295)
         #进入商品详情页
         #获取原价
         # original_price_1 = self.find_element(HomeSelector.ORINGINAL_PRICE_1)
